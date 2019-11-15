@@ -1,0 +1,12 @@
+import os
+
+#server
+os.environ['server_add'] = 'http://127.0.0.1:8000/api/v1/'
+
+# token
+os.environ["client_id"] = "1ANvm9xyPTh87f5CENtwxGTpYsAnyFUIAh0iJWhH"
+os.environ[
+    'client_secret'] = "R76eEYBZcV3az2TbJoB7T7m3Ks8gCoRQnHrkXH3WVHD1Atr6gqYQDPXABZ7iqCDGb2ITB2tlmvBjhskJSY5TPrY6lDRsL9pbQANGLGekPYdM7PMuCZ81Ni896Vvu1OK6"
+os.environ['token_login'] = '{}o/token/'.format(os.environ['server_add'])
+os.environ['token_logout'] = '{}o/revoke_token/'.format(os.environ['server_add'])
+os.environ['expire_time'] = '3600'
